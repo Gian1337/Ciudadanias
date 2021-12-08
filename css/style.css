@@ -1,0 +1,390 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+header{
+background-color: white;
+height: 130px;
+}
+
+.imagensitio{
+    display: block;
+    margin: auto;
+}
+
+body{
+    font-family: Raleway, Times, serif;
+}
+
+main{
+    background: linear-gradient(90deg, white, #4a90e2);
+}
+
+h2{
+    font: italic;
+    font-size: 50px;
+    color: #4a90e2;
+    margin-top: 50px;
+    margin-left: 10px;
+}
+
+h3{
+font-size: 25px;
+background: transparent;
+font: italic;
+color: #4a90e2;
+margin: 1% 0% 1% 3%;
+}
+
+h4{
+
+font-size: 20px;
+color: black;
+margin: 2% 0% 1% 3%;
+font-weight: bolder;
+text-decoration: underline;
+}
+
+p,span{
+color: black;
+font-size: 17px;
+text-align: justify;
+font-weight: bold;
+margin: 1% 2% 1% 3%;
+}
+
+#grilla{
+    height: 100%;
+    width: 100%;
+    display: grid;
+}
+
+.titulosH3{
+    font-size: 25px;
+    font: italic;
+    color: rgb(39, 37, 37);
+    margin: 1% 0% 1% 3%;
+    text-transform: uppercase;
+    text-decoration: underline;
+}
+
+
+/* ---------------INDEX------------*/
+.contenidoMain{
+    height: 100%;
+    width: 100%;
+}
+/*---------MENU DE NAVEGACION---------*/
+nav{
+height: 90px;
+position: sticky;
+text-decoration: none;
+border: white 8px inset;
+padding-bottom: 2%;
+background: linear-gradient(90deg, white, #4a90e2);
+}
+
+a,li{
+    color: black;
+    font-weight: 800;
+    text-transform: uppercase;
+    font-size: 18px;
+    width: 25%;
+    text-align: center;
+    margin-top: 3%;
+    text-decoration: none;
+    position: sticky;
+    vertical-align: middle;
+}
+
+a:hover{
+    color:white;
+    transition: 0.5s ease-in;
+    box-shadow: 3px 3px 3px 3px
+    rgba(0,0,0,0.47);
+    
+}
+ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    
+}
+
+
+/*--------SERVICIOS--------*/
+
+.contenidoServicios{
+    height: 100%;
+    width: 100%;                    
+}
+
+#grillaServicios{
+    display: grid;
+    grid-template-columns: 90%;
+    grid-template-rows:  20% 20% 20% 20%;   
+    grid-template-areas:"area1"
+                        "area2"
+                        "area3"
+                        "area4";
+    justify-content: space-evenly;
+    
+}
+
+
+
+.imagenServicios{
+    /* IMAGEN RESPONSIVE */
+    max-width: 100%;
+    height: auto;
+}
+/*--------EXPERIENCIAS----------*/
+.contenidoExperiencias{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.imagenExp{
+    height: 200px;
+    width: 50%;
+    margin-left: 4%;
+}
+/*------------BLOG-----------*/
+.contenidoBlog{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.flexUno{
+    order: 1;
+}
+
+.flexDos{
+    order: 2;
+}
+.arBlog{
+    margin: 0% 3% 3% 3%;
+}
+
+.fechaBlog{
+    
+    color: black;
+    font-size: 10px;
+    text-align: justify;
+    margin-left: 1%;
+}
+
+/*-----------CONTACTO-----------*/
+
+.contenidoContacto{
+    height: 100%;
+    width: 100%;
+}
+
+fieldset{
+    text-align: center;
+    border: inset white 8px;
+    background-color: white;
+    border-radius:50px 50px 50px 50px;
+}
+
+legend{
+    margin: auto;
+}
+.textoForm{
+    text-align: center;
+}
+#imagenContacto{
+    width: 20%;
+    height: 20%;
+    
+}
+
+/*----------------FOOTER--------------*/
+.links{
+color: blue;
+display: inline;
+}
+
+footer{
+    text-align: center;
+    background: linear-gradient(90deg, white, #4a90e2);
+    }
+
+.textoFooter{
+    padding-top: 2%;
+    font-size: 12px;
+    text-align: center;
+}
+
+
+/*---------------MEDIA QUERIES----------*/
+
+/*SMALL*/
+@media only screen and (max-width:768px){
+
+    #grilla{
+        background-color: white;
+        grid-template-columns: 100%;
+        grid-template-rows: 120px 230px 70% 100px;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+    }
+    header{
+        grid-area: header;
+        transform: translate(0px, 40px);
+    }
+    nav{
+        grid-area: nav;
+        height: 93%;
+    }
+    main{
+        grid-area: main;
+        flex-direction: column;
+        justify-content: space-around;
+    
+    }
+    
+    footer{
+        grid-area: footer;
+    }
+    ul{
+        flex-direction: column;
+        align-items: center;
+    }
+
+    li{
+        font-size: 10px;
+        transform: translate(0px, 20px);
+    }
+    
+
+    .iframeCon{
+        transform: translate(15px,0px);
+    }
+    
+}
+/*MEDIUM*/
+
+@media only screen and (min-width: 768px){
+
+    #grilla{
+        background-color: white;
+        grid-template-columns: 100%;
+        grid-template-rows: 10% 20% 60% 10%;
+        grid-template-areas: "header"
+                             "nav"
+                             "main"
+                             "footer";
+    }
+
+    header{
+        grid-area: header;
+        transform: translate(0px, 40px);
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: footer;
+    }
+
+    li{
+        transform: translate(0px,15px);
+    }
+
+    .iframeCon{
+        transform: translate(30px,0px);
+    }
+
+    .flexServ{
+        display: flex;
+        flex-direction: row;
+    }
+}
+
+
+/*LARGE*/
+@media only screen and (min-width: 1200px){
+
+    #grilla{
+        background-color: white;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 5% 15% 70% 10%;
+        grid-template-areas: "header header"
+                             "nav  nav"
+                             "main main"
+                             "footer footer";
+        
+    }
+
+    header{
+        grid-area: header;
+    }
+
+    nav{
+        grid-area: nav;
+    }
+
+    main{
+        grid-area: main;
+    }
+
+    footer{
+        grid-area: footer;
+        
+    }
+
+    fieldset{
+        width: 70%;
+        height: 80%;
+        padding-top: 15%;
+        margin-left: 15%;
+    }
+
+    .flexServ{
+        display: flex;
+        flex-direction: row;
+    }
+
+    .iframeCon{
+        width: 80%;
+        height: 70%;
+        transform: translate(20px,0px);
+    }
+
+    #grillaContacto{
+        display: grid;
+        height: 100%;
+        width: 100%;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: 1fr 1fr;
+        grid-template-areas: "info ubicacion"
+                             "info formulario";
+    }
+
+    #hijoUno{
+        grid-area: info;
+    }
+    #hijoDos{
+        grid-area: ubicacion;
+    }
+    #hijoTres{
+        grid-area: formulario;
+    }
+}
+
