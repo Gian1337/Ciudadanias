@@ -139,8 +139,10 @@ footer{
     }
 
     /* CONTACTO */
-    #hijo3{
+    #content_form_hijo3{
         color:white;
+        margin-bottom: 4%;
+
     }
 
 }
@@ -180,17 +182,19 @@ footer{
         margin-top: 3%;
     }
 
-    #hijo1{
+    #content_form_hijo1{
         grid-area: contenido;
     }
 
-    #hijo2{
+    #content_form_hijo2{
         grid-area: ubicacion;
     }
 
-    #hijo3{
+    #content_form_hijo3{
         grid-area: formulario;
         color: white;
+        margin-bottom: 4%;
+
     }
 
     #content_servicios{
@@ -274,17 +278,18 @@ footer{
         
     }
 
-    #hijo1{
+    #content_form_hijo1{
         grid-area: contenido;
     }
 
-    #hijo2{
+    #content_form_hijo3{
         grid-area: ubicacion;
     }
 
-    #hijo3{
+    #content_form_hijo3{
         grid-area: formulario;
         color: white;
+        margin-bottom: 4%;
     }
 
     #content_servicios{
