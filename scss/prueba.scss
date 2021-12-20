@@ -15,6 +15,7 @@
         header{
             width: 100%;
             height: 100%;
+            z-index: 9;
             }
             
             
@@ -112,6 +113,7 @@
                             
         footer{
                 grid-area: footer;
+                padding-top: 30%;
                 }
                         
     }
@@ -131,7 +133,7 @@
         margin-bottom: 3%;
 
         .imagenes{
-            width: 100px;
+            max-width: 100%;
             height: 300px;
         }
     
@@ -182,6 +184,7 @@
                         
                     footer{
                         grid-area: footer;
+                        padding-top: 15%
                         }
     }
     
@@ -227,7 +230,7 @@
     #content_servicios{
         display: grid;
         grid-template-columns: 85%;
-        grid-template-rows: 20% 20% 20% 20%;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
         grid-template-areas: "area1"
                              "area2"
                              "area3"
@@ -336,8 +339,7 @@
                              "area4";
         justify-content: space-around;
         align-content: center;
-        margin-top: 5%;
-        margin-bottom: 3%;
+        
 
         .imagenes{
             max-width: 100%;

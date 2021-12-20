@@ -11,7 +11,8 @@
     font-family: 'Raleway', sans-serif; }
     #grilla body header {
       width: 100%;
-      height: 100%; }
+      height: 100%;
+      z-index: 9; }
     #grilla body main {
       width: 100%;
       height: 100%; }
@@ -74,7 +75,8 @@
     #grilla main {
       grid-area: main; }
     #grilla footer {
-      grid-area: footer; }
+      grid-area: footer;
+      padding-top: 30%; }
   #content_servicios {
     display: grid;
     grid-template-columns: 85%;
@@ -85,7 +87,7 @@
     margin-top: 5%;
     margin-bottom: 3%; }
     #content_servicios .imagenes {
-      width: 100px;
+      max-width: 100%;
       height: 300px; }
     #content_servicios #tarjeta1 {
       grid-area: area1; }
@@ -112,7 +114,8 @@
     #grilla main {
       grid-area: main; }
     #grilla footer {
-      grid-area: footer; }
+      grid-area: footer;
+      padding-top: 15%; }
   #content_exp {
     display: grid;
     grid-template-columns: 40% 40%;
@@ -138,7 +141,7 @@
   #content_servicios {
     display: grid;
     grid-template-columns: 85%;
-    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-template-areas: "area1" "area2" "area3" "area4";
     justify-content: space-around;
     align-content: center;
@@ -196,9 +199,7 @@
     grid-template-rows: 20% 20% 20% 20%;
     grid-template-areas: "area1" "area2" "area3" "area4";
     justify-content: space-around;
-    align-content: center;
-    margin-top: 5%;
-    margin-bottom: 3%; }
+    align-content: center; }
     #content_servicios .imagenes {
       max-width: 100%;
       height: 292px; }
