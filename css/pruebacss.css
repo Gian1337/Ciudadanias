@@ -1,0 +1,212 @@
+* {
+  padding: 0;
+  margin: 0; }
+
+#grilla {
+  width: 100%;
+  height: 100%;
+  display: grid;
+  background-image: radial-gradient(circle at center center, transparent, white), repeating-linear-gradient(135deg, white 0px, white 12px, transparent 12px, transparent 19px, white 19px, white 24px, transparent 24px, transparent 28px), repeating-linear-gradient(45deg, whitesmoke 0px, whitesmoke 7px, transparent 7px, transparent 14px), linear-gradient(90deg, white, white); }
+  #grilla body {
+    font-family: 'Raleway', sans-serif; }
+    #grilla body header {
+      width: 100%;
+      height: 100%; }
+    #grilla body main {
+      width: 100%;
+      height: 100%; }
+    #grilla body footer {
+      width: 100%;
+      height: 100%;
+      text-align: center;
+      font-size: 10px; }
+
+/* CLASES ANIMACIONES */
+.redes {
+  width: 30px;
+  height: 30px; }
+
+.sombras {
+  box-shadow: #26394d 0px 20px 30px -10px; }
+
+.imagenes2 {
+  width: 15px;
+  height: 200px; }
+
+/* INDEX */
+.hero-image {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../images/passport-g5aad920c0_1920.jpg);
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative; }
+  .hero-image .hero-text {
+    text-align: center;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white; }
+  .hero-image .hero-text button {
+    border: none;
+    outline: 0;
+    display: inline-block;
+    padding: 10px 25px;
+    color: black;
+    background-color: #ddd;
+    text-align: center;
+    cursor: pointer; }
+    .hero-image .hero-text button .hero-text button:hover {
+      background-color: white;
+      color: white; }
+
+/*---------------MEDIA QUERIES----------*/
+/*SMALL*/
+@media only screen and (max-width: 768px) {
+  #grilla {
+    background-color: white;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 83% 10%;
+    grid-template-areas: "nav" "main" "footer"; }
+    #grilla header {
+      grid-area: nav; }
+    #grilla main {
+      grid-area: main; }
+    #grilla footer {
+      grid-area: footer; }
+  #content_servicios {
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas: "area1" "area2" "area3" "area4";
+    justify-content: space-evenly;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%; }
+    #content_servicios .imagenes {
+      width: 100px;
+      height: 300px; }
+    #content_servicios #tarjeta1 {
+      grid-area: area1; }
+    #content_servicios #tarjeta2 {
+      grid-area: area2; }
+    #content_servicios #tarjeta3 {
+      grid-area: area3; }
+    #content_servicios #tarjeta4 {
+      grid-area: area4; }
+  /* CONTACTO */
+  #content_form_hijo3 {
+    color: white;
+    margin-bottom: 4%; } }
+
+/*MEDIUM*/
+@media only screen and (min-width: 768px) {
+  #grilla {
+    background-color: white;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 83% 10%;
+    grid-template-areas: "nav" "main" "footer"; }
+    #grilla header {
+      grid-area: nav; }
+    #grilla main {
+      grid-area: main; }
+    #grilla footer {
+      grid-area: footer; }
+  #content_exp {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: "card1 card2" "card3 card4" "card5 card6";
+    justify-content: space-around;
+    margin: 3% 0% 5% 0%; }
+  #content_form {
+    display: grid;
+    grid-template-columns: 45% 45%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contenido ubicacion" "formulario formulario";
+    justify-content: space-around;
+    margin-top: 3%; }
+    #content_form #content_form_hijo1 {
+      grid-area: contenido; }
+    #content_form #content_form_hijo2 {
+      grid-area: ubicacion; }
+    #content_form #content_form_hijo3 {
+      grid-area: formulario;
+      color: white;
+      margin-bottom: 4%; }
+  #content_servicios {
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas: "area1" "area2" "area3" "area4";
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%; }
+    #content_servicios .imagenes {
+      max-width: 100%;
+      height: 292px; }
+    #content_servicios #tarjeta1 {
+      grid-area: area1; }
+    #content_servicios #tarjeta2 {
+      grid-area: area2; }
+    #content_servicios #tarjeta3 {
+      grid-area: area3; }
+    #content_servicios #tarjeta4 {
+      grid-area: area4; } }
+
+/*LARGE*/
+@media only screen and (min-width: 1200px) {
+  #grilla {
+    background-color: white;
+    grid-template-columns: 100%;
+    grid-template-rows: 7% 83% 10%;
+    grid-template-areas: "nav" "main" "footer"; }
+    #grilla header {
+      grid-area: nav; }
+    #grilla main {
+      grid-area: main; }
+    #grilla footer {
+      grid-area: footer; }
+  #content_exp {
+    display: grid;
+    grid-template-columns: 30% 30% 30%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "card1 card2 card3" "card4 card5 card6";
+    justify-content: space-around;
+    margin: 3% 0% 5% 0%; }
+  #content_form {
+    display: grid;
+    grid-template-columns: 40% 40%;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "contenido ubicacion" "formulario formulario";
+    justify-content: space-around; }
+    #content_form #content_form_hijo1 {
+      grid-area: contenido; }
+    #content_form #content_form_hijo3 {
+      grid-area: ubicacion; }
+    #content_form #content_form_hijo3 {
+      grid-area: formulario;
+      color: white;
+      margin-bottom: 4%; }
+  #content_servicios {
+    display: grid;
+    grid-template-columns: 85%;
+    grid-template-rows: 20% 20% 20% 20%;
+    grid-template-areas: "area1" "area2" "area3" "area4";
+    justify-content: space-around;
+    align-content: center;
+    margin-top: 5%;
+    margin-bottom: 3%; }
+    #content_servicios .imagenes {
+      max-width: 100%;
+      height: 292px; }
+    #content_servicios #tarjeta1 {
+      grid-area: area1; }
+    #content_servicios #tarjeta2 {
+      grid-area: area2; }
+    #content_servicios #tarjeta3 {
+      grid-area: area3; }
+    #content_servicios #tarjeta4 {
+      grid-area: area4; } }
