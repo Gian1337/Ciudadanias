@@ -44,12 +44,12 @@
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="https://twitter.com/ciudadaniaeu?s=11"><img class="redes"
-                                        src="../images/twitter w.png" alt="Logo de Twitter"></a>
+                                        src="../images/twitter-logo.png" alt="Logo de Twitter"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link"
                                     href="https://instagram.com/eurociudadania?utm_medium=copy_link"><img class="redes"
-                                        src="../images/instagram w.png" alt="Logo de Instagram"></a>
+                                        src="../images/instagram-logo.png" alt="Logo de Instagram"></a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link" href="#"><img class="redes" src="../images/email2.png"
@@ -111,21 +111,21 @@
                 </aside>
 
                 <form id="content_form_hijo3">
-                    <legend style="text-align: center;"><img src="../images/contacto.png"
+                    <legend><img src="../images/contacto.png"
                             style="width: 200px;height: 200px;" alt=""></legend>
-                    <div class="container bg-dark" style="padding-bottom: 3%;">
+                    <div class="container bg-dark" style="padding-bottom: 2%;">
                         <div class="mb-3">
                             <label for="nombreUsuario" class="form-label">Nombre y apellido*</label>
-                            <input class="form-control" type="text" id="nombreUsuario">
+                            <input class="form-control" type="text" id="nombreUsuario" placeholder="Ingrese su nombre y apellido.">
                         </div>
                         <div class="mb-3">
                             <label for="exampleInputEmail1" class="form-label">Email*</label>
                             <input type="email" class="form-control" id="exampleInputEmail1"
-                                aria-describedby="emailHelp">
+                                aria-describedby="emailHelp" placeholder="Ingrese su e-mail.">
                         </div>
                         <div class="mb-3">
                             <label for="telefono" class="form-label">Teléfono*</label>
-                            <input class="form-control" type="tel" id="telefono">
+                            <input class="form-control" type="tel" id="telefono" placeholder="Ingrese su número de teléfono.">
                         </div>
                         <div class="mb-3">
                             <p>¿Que ciudadania europea tenes?</p>
@@ -146,17 +146,28 @@
 
                             <label for="Alemana">Alemana</label>
                             <input type="radio" name="ciudadania" id="Alemana">
+
+                            <label for="Otra">Otra</label>
+                            <input type="radio" name="ciudadania" id="Otra">
                         </div>
                         <div class="mb-3">
                             <label for="Mensaje">Ingrese su consulta aquí.</label>
                             <br>
                             <textarea class="form-control" name="Mensaje" id="Mensaje" cols="30" rows="10"
-                                placeholder="Ingrese su mensaje aquí"></textarea>
+                                placeholder="Ingrese su mensaje aquí."></textarea>
                         </div>
-                        <button type="submit" class="btn btn-primary btn-lg " style="width: 100%;">Enviar
-                            formulario</button>
+                            <button class="boton_contacto">
+                                <div class="svg-wrapper-1">
+                                  <div class="svg-wrapper">
+                                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="24" height="24">
+                                      <path fill="none" d="M0 0h24v24H0z"></path>
+                                      <path fill="currentColor" d="M1.946 9.315c-.522-.174-.527-.455.01-.634l19.087-6.362c.529-.176.832.12.684.638l-5.454 19.086c-.15.529-.455.547-.679.045L12 14l6-8-8 6-8.054-2.685z"></path>
+                                    </svg>
+                                  </div>
+                                </div>
+                                <span class="span_contacto">Enviar</span>
+                              </button>
                     </div>
-                    </fieldset>
                 </form>
 
             </div>
